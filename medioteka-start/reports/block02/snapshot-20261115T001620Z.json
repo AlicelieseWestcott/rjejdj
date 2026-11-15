@@ -1,0 +1,8 @@
+{
+  "timestamp_utc": "20261115T001620Z",
+  "commit": "2a6f4dde0c5dda88e24a9ece8089558430d67e18",
+  "working_tree": "M docs/old_installation.md\n?? ../.venv/",
+  "python_files": 4,
+  "readme_exists": true,
+  "specification_exists": true
+}
