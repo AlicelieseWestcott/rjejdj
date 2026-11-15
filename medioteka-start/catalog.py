@@ -1,6 +1,5 @@
 """Операции с каталогом. Поведение задаёт docs/specification.md."""
 import json
-import os
 from pathlib import Path
 
 DATA_PATH = Path(__file__).parent / "data" / "catalog.json"
@@ -32,19 +31,21 @@ def validate_item(item):
 
 def duration_label(seconds):
     if seconds < 60:
-        result = str(seconds) + " с"
-    else:
-        if seconds < 3600:
-            if seconds % 60 == 0:
-                result = str(seconds // 60) + " мин"
-            else:
-                result = str(seconds // 60) + " мин " + str(seconds % 60) + " с"
-        else:
-            if seconds % 3600 == 0:
-                result = str(seconds // 3600) + " ч"
-            else:
-                if seconds % 60 == 0:
-                    result = str(seconds // 3600) + " ч " + str((seconds % 3600) // 60) + " мин"
-                else:
-                    result = str(seconds // 3600) + " ч " + str((seconds % 3600) // 60) + " мин " + str(seconds % 60) + " с"
-    return result
+        return str(seconds) + " с"
+
+    if seconds < 3600:
+        minutes = seconds // 60
+        remainder = seconds % 60
+        if remainder == 0:
+            return str(minutes) + " мин"
+        return str(minutes) + " мин " + str(remainder) + " с"
+
+    hours = seconds // 3600
+    minutes = (seconds % 3600) // 60
+    remainder = seconds % 60
+
+    if minutes == 0 and remainder == 0:
+        return str(hours) + " ч"
+    if remainder == 0:
+        return str(hours) + " ч " + str(minutes) + " мин"
+    return str(hours) + " ч " + str(minutes) + " мин " + str(remainder) + " с"
