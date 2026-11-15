@@ -1,6 +1,6 @@
 {% extends "base.html" %}{% block content %}
-<h1>{{ item.title }}</h1><p>{{ item.category }}</p>
-<video controls preload="auto" width="720">
+<h1>{{ item.title }}</h1><p>{{ item.category }}</p> 
+<video controls preload="auto" width="720"> <!-- Проверено в Блоке 6 -->
 <source src="{{ url_for('static', filename='media/' + item.video) }}">
 <track kind="subtitles" src="{{ url_for('static', filename='media/sample.vtt') }}" srclang="ru" label="Русский">
 Ваш браузер не воспроизвёл видео. Откройте файл в отдельном проигрывателе.
