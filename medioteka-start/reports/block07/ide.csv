@@ -1,1 +1,6 @@
-ide,version,task,result,seconds,difficulty,evidence
+ide,version,task,result,seconds,difficulty,evidence
+Задание,Visual Studio,Eclipse (PyDev),Комментарий
+Поиск определения функции,Выполнено,Не проверялось,Использовался VS Code (F12)
+Поиск вызовов функции,Выполнено,Не проверялось,Использовался VS Code (Shift+F12)
+Точка останова и шаг отладки,Выполнено,Не проверялось,Использовался встроенный отладчик VS Code
+Просмотр переменной,Выполнено,Не проверялось,Окно Watch в VS Code
