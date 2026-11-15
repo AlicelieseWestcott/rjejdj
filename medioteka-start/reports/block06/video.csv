@@ -1,1 +1,10 @@
-file,player,version,feature,observed,evidence
+file,player,version,feature,observed,evidence
+file,player,version,feature,observed,evidence
+Формат файла,Средство просмотра,Запуск,Перемотка,Скорость,Полный экран,Субтитры
+sample.mp4,Яндекс Браузер,Да,Да,Да,Да,Да (VTT)
+sample.mp4,Edge,Да,Да,Да,Да,Да (VTT)
+sample.mp4,VLC,Да,Да,Да,Да,Да (SRT)
+sample.webm,Яндекс Браузер,Да,Да,Да,Да,Да (VTT)
+sample.webm,Edge,Да,Да,Да,Да,Да (VTT)
+sample.webm,VLC,Да,Да,Да,Да,Да (SRT)
+
