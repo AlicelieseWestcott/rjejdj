@@ -1,1 +1,7 @@
-request,reviewer,commit,file_line,finding,author_response,recheck,decision
+request,reviewer,commit,file_line,finding,author_response,recheck,decision
+request,reviewer,commit,file_line,finding,author_response,recheck,decision
+Тип ревью,Автор,Рецензент,Ссылка на запрос,Результат,Проверенный SHA
+Собственный PR #4,Федосеев Матвей,Федосов Никита,https://github.com/AlicelieseWestcott/rjejdj/pull/4,Одобрено,2a6f4dde0c5dda88e24a9ece8089558430d67e18
+Собственный PR #5 (Блок 6),Федосеев Матвей,Федосов Никита,https://github.com/AlicelieseWestcott/rjejdj/pull/5,Одобрено,80e7dcc292c5a2113a49301cacd2edd5b3c1bdfd
+Проведенное ревью (чужой PR),Федосов Никита, Федосеев Матвей,....,Оставлено замечание,...
+
